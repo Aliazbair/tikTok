@@ -4,8 +4,9 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import { GoVerified } from 'react-icons/go';
 import Ali from '../public/ali.jpg';
-import Logo from '../public/tiktik-logo.png';
+
 function SuggestedAccount() {
+  
   return (
     <div className='xl:border-b-2 border-gray-200 pb-4 '>
       <p className='text-gray-500 font-semibold m-3 mt-4 hidden xl:block'>
