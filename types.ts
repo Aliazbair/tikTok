@@ -1,8 +1,10 @@
 export interface Video {
   caption: string;
   video: {
-    _id: string;
-    url: string;
+    asset: {
+      _id: string;
+      url: string;
+    };
   };
   _id: string;
   postedBy: {
