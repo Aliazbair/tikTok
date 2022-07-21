@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  name: 'PostedBy',
+  name: 'postedBy',
   title: 'PostedBy',
   type: 'reference',
   to: [{ type: 'user' }],
