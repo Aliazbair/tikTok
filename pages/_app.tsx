@@ -15,13 +15,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GoogleOAuthProvider clientId='729672999669-okpdrirgktvcmn0hvcufgd9ivi4k45p8.apps.googleusercontent.com'>
-        <div className='xl:w-[1200px] m-auto overflow-hidden h-[100vh]'>
+        <div className='xl:w-[1200px] m-auto overflow-hidden h-screen'>
           <Navbar />
           <div className='flex gap-6 md:gap-20'>
             <div className='h-[92vh] overflow-hidden xl:hover:overflow-auto'>
               <Sidebar />
             </div>
-            <div>
+            <div className='mt-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1'> 
               <Component {...pageProps} />
             </div>
           </div>

@@ -6,6 +6,7 @@ import { topics } from '../utils/constants';
 import useAuthStore from '../store/authStore';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import { BASE_URL } from '../utils';
 
 function Upload() {
   // setup all state
@@ -69,7 +70,7 @@ function Upload() {
         },
         topic: category,
       };
-      await axios.post('http://localhost:3000/api/post', decoument);
+      await axios.post(`${BASE_URL}/api/post`, decoument);
       router.push('/');
     }
   };
